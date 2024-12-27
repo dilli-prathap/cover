@@ -38,136 +38,75 @@ Publish the website in the LocalHost.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Front Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    
     <style>
-        /* Reset default margins and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* General Body Styling */
+        /* Style for the body */
         body {
-            font-family: 'Poppins', sans-serif;
-            background: #050506;
+            margin: 0;
+            height: 100vh;
+            background-image: url("C:\Users\admin\OneDrive\Pictures\Screenshots\Screenshot 2024-12-19 143012.png"); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            text-align: center;
         }
 
-        /* Book Cover Styling */
-        .book-cover {
+        /* Container for the book title and author */
+        .book-container {
             position: relative;
-            width: 700px;
-            height: 500px;
-            background: #3987ec;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(13, 89, 229, 0.916);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px;
-            overflow: hidden;
+            text-align: center;
         }
 
-        /* Book Title Styling */
-        .book-title {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 40px;
-            font-weight: bold;
-            color: #f9f8fc;
+        /* Book title style */
+        h1 {
+            font-size: 4em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        /* Subtitle style */
+        h2 {
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-top: 10px;
+        }
+
+        /* Author name style */
+        p {
+            font-size: 1.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
             margin-top: 20px;
-            text-align: center;
         }
 
-        /* Content Section (Middle of the Page) */
-        .book-content {
-            text-align: center;
-            margin-top: 60px; /* Adjust the spacing from the title */
-        }
-
-        .book-description p {
-            font-size: 18px;
-            font-style: italic;
-            opacity: 0.8;
-            color: #e9e8f2;
-            max-width: 80%; /* Keep content width in check */
-            margin: 20px auto;
-        }
-
-        /* Horizontal Line (extends from left till the image) */
-        .horizontal-line {
-            width: calc(100% - 200px); /* Leaves space for the image on the right */
-            height: 2px;
-            background-color: #ec200d;
+        /* Style for the author's image */
+        .author-img {
             position: absolute;
-            bottom: 110px; /* Place it above the author and image */
-            left: 0;
-        }
-
-        /* Image Container (Bottom Right) */
-        .image-container {
-            position: absolute;
-            bottom: 20px;
             right: 20px;
-        }
-
-        /* Image Styling */
-        .book-image {
-            width: 180px;
+            bottom: 20px;
+            width: 150px;
             height: auto;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(221, 38, 38, 0.732);
-            border: 5px solid #f41616e2;
-        }
-
-        /* Author Name Styling */
-        .book-author {
-            position: absolute;
-            bottom: 80px; /* Space just above the image */
-            text-align: center;
-            width: 100%;
-        }
-
-        .book-author h2 {
-            font-size: 24px;
-            font-weight: 600;
-            color: #f3eded;
+            border-radius: 50%;
+            border: 5px solid white;
         }
     </style>
 </head>
 <body>
-    <div class="book-cover">
-        <!-- Book Title -->
-        <div class="book-title">
-            <h1>WELCOME TO</h1>
-        </div>
 
-        <!-- Content Section (Middle) -->
-        <div class="book-content">
-            <div class="book-description">
-                <h2>WEB APPLICATION</h2>
-            </div>
-        </div>
+    <div class="book-container">
+        <h1>The Book Title</h1>
+        <h2>A Subheading or Tagline</h2>
+        <p>By Author Name</p>
 
-        <!-- Horizontal Line (Extends from left till the image) -->
-        <div class="horizontal-line"></div>
-
-        <!-- Author Name Below the Content -->
-        <div class="book-author">
-            <h2>by DILLI PRATHAP</h2>
-        </div>
-
-        <!-- Image at Bottom-Right -->
-        <div class="image-container">
-            <img src="pic.png"alt="Book Image" class="book-image">
-        </div>
+        <!-- Author's image -->
+        <img src="C:\Users\admin\OneDrive\Pictures\Screenshots\Screenshot 2024-12-23 192003.png" alt="Author Image" class="author-img"> <!-- Replace with your author image URL -->
     </div>
+
 </body>
 </html>
+
 
 ```
 ## OUTPUT:
