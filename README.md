@@ -37,80 +37,99 @@ Publish the website in the LocalHost.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Front Page</title>
+    <title>Book Cover Design</title>
     <style>
-        /* Style for the body */
-        body {
+        * {
             margin: 0;
-            height: 100vh;
-            background-image: url("C:\Users\admin\OneDrive\Pictures\Screenshots\Screenshot 2024-12-19 143012.png"); /* Replace with your background image URL */
-            background-size: cover;
-            background-position: center;
-            color: white;
-            font-family: Arial, sans-serif;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
+            min-height: 100vh;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
         }
-
-        /* Container for the book title and author */
-        .book-container {
+        .book-cover {
+            width: 350px;
+            height: 550px;
+            background: linear-gradient(to bottom right, #2c3e50, #4ca1af);
+            color: white;
+            text-align: center;
             position: relative;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+        }
+        .expert-insight {
+            font-size: 14px;
+            font-weight: bold;
+            color: #f39c12;
+            border-bottom: 2px solid #e67e22;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .book-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 30px 0 10px 0;
+            line-height: 1.3;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #dfe6e9;
+            margin-bottom: 40px;
+        }
+        .bottom-section {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
             text-align: center;
         }
-
-        /* Book title style */
-        h1 {
-            font-size: 4em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            margin: 0;
+        .edition {
+            font-weight: bold;
+            font-size: 14px;
+            color: #f39c12;
         }
-
-        /* Subtitle style */
-        h2 {
-            font-size: 2em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            margin-top: 10px;
-        }
-
-        /* Author name style */
-        p {
-            font-size: 1.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            margin-top: 20px;
-        }
-
-        /* Style for the author's image */
-        .author-img {
-            position: absolute;
-            right: 20px;
-            bottom: 20px;
-            width: 150px;
-            height: auto;
+        .author-image {
+            margin: 10px auto;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
-            border: 5px solid white;
+            border: 3px solid #f39c12;
+            object-fit: cover;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .author-name {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ecf0f1;
         }
     </style>
 </head>
 <body>
-
-    <div class="book-container">
-        <h1>The Book Title</h1>
-        <h2>A Subheading or Tagline</h2>
-        <p>By Author Name</p>
-
-        <!-- Author's image -->
-        <img src="C:\Users\admin\OneDrive\Pictures\Screenshots\Screenshot 2024-12-23 192003.png" alt="Author Image" class="author-img"> <!-- Replace with your author image URL -->
+    <div class="book-cover">
+        <div class="expert-insight">EXPERT INSIGHT</div>
+                <div class="book-title">
+            ARTIFICIAL INTELLIGENCE <br> AND MACHINE LEARNING <br> FOR CODERS
+        </div>
+        <div class="subtitle">From BigData to SmallData</div>
+        <div class="bottom-section">
+            <div class="edition">SECOND EDITION</div>
+            <img src="cover.jpeg" alt="Author Image" class="author-image">
+            <div class="author-name">Moroney, Laurence</div>
+        </div>
     </div>
-
 </body>
 </html>
 
-
 ```
 ## OUTPUT:
-![alt text](<Screenshot 2024-12-23 202637.png>)
+![Screenshot 2024-12-28 090437](https://github.com/user-attachments/assets/31adbe58-329a-403d-9379-729f0c56ab0f)
+
 
 ## RESULT:
 The program for designing book front cover page using HTML and CSS is completed successfully.
